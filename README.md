@@ -7,11 +7,13 @@ I made this little web/tool to roll a random genre between the 6291 genres avail
 
 I always loved music and when I discovered [Every Noise at Once](https://everynoise.com/engenremap.html) I new i found an incredible way of finding genres i never heard of before. Even though Every Noise at Once laked something, i wanted to roll a random genre without getting overwhelmed with that giant tree of links. That leaded to a rabbithole of more websites to discover music (because i love to find websites for almos anything btw, maybe that could lead to something)
 
-So thats the way i started doing this and for the moment im impressed i did this whit no much code experience.
+That’s how I ended up building this.
 
-I'm pretty new to this but i decided to finally start with a small project to mess around and learn a bit of Web Development.
+For someone with very little coding experience, I’m honestly impressed I managed to put this together.
 
-For the moment is quite raw and messy but i have some planned features that will make this little web a hub for anyone that loves to discover new music. 
+I’m still pretty new to web development, but I wanted to start with a small project to experiment, break things, and learn along the way.
+
+Right now it’s still rough around the edges, but I already have a few features planned that will hopefully turn it into a small hub for anyone who enjoys discovering new music.
 
 And last, thanks again Glenn McDonald for your incredible contribution and i hope this web doesnt bother you
 
