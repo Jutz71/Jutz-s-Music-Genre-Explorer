@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=  "width=device-width, initial-scale=1.0" />
+    <title></title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+  
+<body>
+
+    <div class="titleBlock">
+        
+        <h1>JUTZ'S MUSIC GENRE EXPLORER</h1> 
+
+        <p>This fan-made tool is built on the incredible work of <strong>Glenn McDonald</strong>, creator of 
+        <a href="https://everynoise.com/engenremap.html">Every Noise at Once</a>. Thanks, Glenn :)</p>
+
+        <p>I made this because I wanted a simpler, faster way to explore the madness of Every Noise at Once</p>
+
+        <p>Note: The genre dataset is frozen as of December 2023.</p>
+
+    </div>
+
+    <div id="rollGenreBlock">
+
+        <h2> Now you are listening to: </h2>
+
+        <div class="showGenre">
+
+            <div id="genreName">Hi there!</div>
+
+            <div id="previewSong">Push the buttons to start rolling</div>
+
+            <div id="previewArtist">have fun :)</div>
+
+        </div>
+
+        <div class="playButtons">
+
+            <button id="resumePlay"> Resume </button>
+
+            <button id="stopPlay"> Stop </button>
+
+            <button id="rePlay"> Replay </button>
+
+        </div>
+
+
+        <div class="actionButtons">
+
+            <a id="link" class="buttonAction" href="#" target="_blank"> Explore It! </a>
+
+            <button id="rollBtn" class="buttonAction" onclick="play()">Roll the genre </button>  <audio id="preview" src="#"></audio>
+        </div>
+
+
+    </div>
+
+        <div id="LinksBlock">
+
+        <h2> Other cool places to discover new music </h2>
+
+        <div class="otherLinks">
+
+            <a class="button" href="https://www.gnoosic.com/faves.php" target="_blank">Gnoosic <span class="tooltip">Type artists you love and get instant recommendations</span> </a> 
+            <a class="button" href="https://www.music-map.com" target="_blank">Music-Map <span class="tooltip">Visual map of related artists</span> </a>
+            <a class="button" href="https://discoverse.co.uk" target="_blank">Discoverse <span class="tooltip">Explore music through interactive discovery tools and playlists <br> <strong>Some features may require login</strong></span> </a>
+            <a class="button" href="https://www.musicroamer.com" target="_blank">Musicroamer <span class="tooltip">Jump from artist to artist like you're wandering through a musical jungle</span> </a>
+            <a class="button" href="https://musicatlas.ai/map/" target="_blank">Music Atlas <span class="tooltip">Discover music geographically across the world. Experimental and evolving <br> <strong>May require account</strong></span> </a>
+            <a class="button" href="https://musicmap.info" target="_blank">Musicmap <span class="tooltip">Chronological map of the history of music with samples and relations</span> </a>
+            <a class="button" href="https://www.indieshuffle.com" target="_blank">Indie Shuffle <span class="tooltip">Curated music blog with fresh indie tracks and playlists</span> </a>
+            <a class="button" href="https://radio.garden/visit/madrid/hFG1a7Dk" target="_blank">Radio Garden <span class="tooltip">Tune into live radio stations around the globe</span> </a>
+            <a class="button" href="https://app.radiooooo.com" target="_blank">Radiooooo <span class="tooltip">Travel through decades and countries via music <br>  <strong>Account and subscription required for full features</strong></span> </a>
+             
+
+        </div>
+        
+        
+        <div class="otherLinks">
+
+
+            <a class="button" href="https://discoverquickly.com" target="_blank">Discover Quickly <span class="tooltip">Fast Spotify-based discovery tool with filters and previews <br> <strong>Requires Spotify connection</strong> </span> </a>
+            <a class="button" href="https://rateyourmusic.com/new-music/" target="_blank">Rate Your Music <span class="tooltip">Massive community database with charts and user ratings <br> <strong>Need login for full use</strong></span> </a>
+            <a class="button" href="https://skiley.net" target="_blank">Skiley <span class="tooltip" target="_blank">Advanced Spotify analytics and playlist tools <br> <strong>Requires Spotify connection</strong></span> </a>
+            <a class="button" href="https://www.trackhack.pro" target="_blank">Trackhack (App) <span class="tooltip">A "Tinder-like" for new songs discovery <br>  <strong>App. Account required</strong></span> </a>
+            <a class="button" href="https://www.gorillavsbear.net" target="_blank">Gorilla vs Bear <span class="tooltip">Influential indie music blog featuring new and trending artists</span> </a>
+            <a class="button" href="https://www.angrymetalguy.com" target="_blank">Angry Metal Guy <span class="tooltip">Detailed reviews and news focused on metal music</span> </a>
+            <a class="button" href="https://songofday.com" target="_blank">Song of the Day <span class="tooltip">Detailed reviews and news focused on metal music</span> </a>
+            <a class="button" href="https://www.chosic.com" target="_blank">Chosic <span class="tooltip">A bunch of tools to search music, explore genres, and create playlists in one place <br> <strong>Need login for full use</strong></span> </a>
+
+        </div>
+
+        </div>  
+
+    
+    <p>Site created by <strong><a href="https://beacons.ai/jutz.laris" target="_blank">Jutz Laris</a></strong> on his way to learn web development</p>
+
+</body>
+
+    <script type="module" src="randomGenre.js"></script>
+
+</html>
