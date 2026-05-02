@@ -36,9 +36,8 @@ body {
 }
 
 .heading{
-  line-height: .3em;
+  display: flex;
   overflow-wrap: break-word;
-  line-height: .3em;
 }
 
 .subheading {
