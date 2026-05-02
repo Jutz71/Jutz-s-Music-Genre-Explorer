@@ -38,7 +38,7 @@ body {
 .heading{
   line-height: .3em;
   overflow-wrap: break-word;
-  line-height: normal;
+  line-height: .3em;
 }
 
 .subheading {
@@ -230,7 +230,7 @@ body {
   } 
 
   .otherLinks {
-    width: 60dvw;
+    width: 70dvw;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
