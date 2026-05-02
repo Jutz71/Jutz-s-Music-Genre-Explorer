@@ -1,4 +1,4 @@
-# Jutz-s-Music-Genre-Explorer
+# Jutz's Music Genre Explorer
  
 Hi there!
 
