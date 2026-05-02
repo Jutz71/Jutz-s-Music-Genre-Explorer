@@ -1,0 +1,206 @@
+:root {
+  font-family: "atkinson hyperlegible";
+  color: black;
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: linear-gradient(0deg, #acc6ff 0%, #dfe5eb 60%) no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleBlock {
+  padding: 1em;
+  /*border: 5px solid red;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  line-height: 0.2em;
+  margin-bottom: 1.4em;
+}
+
+#resumePlay,
+#stopPlay,
+#rePlay {
+  display: inline-flex;
+  width: 6em;
+  height: 2em;
+  align-items: center;
+  justify-content: center;
+  padding: 0.8em;
+  border: none;
+  border-radius: 0.8em;
+  background-color: white;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: medium;
+  color: black;
+  box-shadow: 1px 5px 3px #00000073;
+}
+
+.buttonAction {
+  display: flex; /* mejor que inline-flex aquí */
+  flex-direction: row;
+  width: 9em;
+  height: 5em;
+
+  box-sizing: border-box;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  border: none;
+  border-radius: 1em;
+  gap: 0.6em;
+
+  background-color: white;
+  text-decoration: none;
+  text-align: center;
+  overflow-wrap: break-word;
+  line-height: normal;
+  font-weight: 700;
+  font-size: medium;
+  color: black;
+
+  box-shadow: 1px 5px 3px #00000073;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+  border: none;
+  border-radius: 0.8em;
+  background-color: white;
+  text-decoration: none;
+  font-size: medium;
+  color: black;
+  box-shadow: 1px 5px 3px #00000073;
+  position: relative;
+}
+
+#rollGenreBlock {
+  margin: 0.5em 0em 1em 0em;
+  padding: 3em;
+  display: flex;
+  flex: 1 0 6em;
+  /*border: 5px solid green;*/
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4em;
+}
+
+#genreName {
+  font-size: 26px;
+  padding: .2em;
+  font-weight: 900;
+  color: black;
+  margin-bottom: 100px;
+  border: 5px solid rgba(0, 0, 0, 0);
+}
+
+#previewArtist {
+  font-size: 18px;
+  font-weight: 600;
+  padding: .2em;
+  color: black;
+  border: 5px solid rgba(0, 0, 0, 0);
+}
+
+#previewSong {
+  font-size: 16px;
+  font-weight: 200;
+  font-style: italic;
+  padding: .1em;
+  color: black;
+  border: 5px solid rgba(0, 0, 0, 0);
+}
+
+.showGenre {
+  width: min(300px, 90vw);
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 1.4em;
+  background-color: white;
+  text-transform: capitalize;
+  box-shadow: 1px 5px 3px #00000073;
+  text-align: center;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  line-height: normal;
+  gap: 0.8em;
+}
+
+.actionButtons {
+  padding: 0.2em 0.8em 0.4em 0.8em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.8em;
+}
+
+.playButtons {
+  padding: 0.2em 0.8em 0.4em 0.8em;
+  display: flex;
+  flex-direction: row;
+  gap: 0.4em;
+}
+
+#LinksBlock {
+  margin: 2.8em 0em 1em 0em;
+  padding: 0.2em 0.8em 0.2em 0.8em;
+  display: flex;
+  flex: 1 0 6em;
+  /*border: 5px solid green;*/
+  flex-direction: column;
+  align-items: center;
+}
+
+.otherLinks {
+  margin: 0.2em 0.2em 0.2em 0.2em;
+  padding: 0.2em 0.8em 0.2em 0.8em;
+  display: flex;
+  /*border: 5px solid blue;*/
+  flex-direction: row;
+  gap: 0.8em;
+}
+
+.tooltip {
+  position: absolute;
+  bottom: 100%;
+  transform: translateY(4px);
+  width: 8em;
+  background: #ffffff;
+  color: #000000;
+  padding: 1em;
+  border-radius: 0.8em;
+  overflow-wrap: break-word;
+  line-height: normal;
+  font-style: italic;
+  opacity: 0;
+  pointer-events: none;
+  transition: 0.2s;
+}
+
+.tooltip > strong {
+  display: inline-block;
+  font-style: normal;
+}
+
+.button:hover .tooltip {
+  opacity: 1;
+}
+
+.button:hover {
+  transform: translateY(-4px);
+}

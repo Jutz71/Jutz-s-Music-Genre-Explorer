@@ -1,60 +1,157 @@
 :root {
   font-family: "atkinson hyperlegible";
   color: black;
+  margin: 0;
+  padding: 0;
+  --shadow: 0px 5px 3px #00000073;
+}
+
+html {
+  width: 100vw;
+  min-height: 100dvh;
+  background: linear-gradient(0deg, #acc6ff, #dfe5eb) no-repeat;
 }
 
 body {
-  background: linear-gradient(0deg, #acc6ff 0%, #dfe5eb 60%) no-repeat;
+  margin: 0;
+  min-height: 100dvh;
+  padding: 1.4em;
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 0.2em;
+  text-align: center;
 }
 
-.titleBlock {
+.heading,
+.rdmGenreContainer,
+.linksContainer {
+  width: 100%;
+  max-width: 900px;
   padding: 1em;
-  /*border: 5px solid red;*/
+
   display: flex;
   flex-direction: column;
   align-items: center;
-  line-height: 0.2em;
-  margin-bottom: 1.4em;
 }
+
+.heading{
+  line-height: .3em;
+  overflow-wrap: break-word;
+  line-height: normal;
+}
+
+.subheading {
+  font-size: .8em;
+  line-height: normal;
+  overflow-wrap: break-word;
+}
+
+/*---------------------- genre container ---------- */
+
+.rdmGenreContainer{
+  width: 70%;
+}
+
+.showGenre {
+  width: 100%;
+  aspect-ratio: 1; 
+
+  border-radius: 1em;
+  background-color: white;
+  box-shadow: var(--shadow);
+
+  display: flex;
+  flex-direction: column;   
+  justify-content: space-between;
+  align-items: center; 
+
+
+  text-align: center;
+  padding: 1em;
+}
+
+#genreName {
+  margin: .8em;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-transform: capitalize; 
+}
+
+
+#previewSong {
+  font-style: italic;
+}
+
+#previewArtist {
+  margin-top: .3em;
+  font-weight: 600;
+  font-size: 1.1em;
+}
+
+
+/*------------------------- Buttons ----------------- */
+
+
+.mainButtons {
+  width:110%;
+  margin: .8em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4em;
+}
+
+.playButtons {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+  
+}
+
+.actionButtons {
+
+  display: flex;
+  gap: .4em;
+  width: 100%;
+}
+
+
+/*---------------------- button styling ---------- */
+
 
 #resumePlay,
 #stopPlay,
 #rePlay {
-  display: inline-flex;
-  width: 6em;
-  height: 2em;
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
+
   padding: 0.8em;
   border: none;
   border-radius: 0.8em;
   background-color: white;
-  text-decoration: none;
   font-weight: 700;
-  font-size: medium;
-  color: black;
-  box-shadow: 1px 5px 3px #00000073;
+
+  box-shadow: var(--shadow);
 }
 
 .buttonAction {
-  display: flex; /* mejor que inline-flex aquí */
+  margin-top: .3em;
+  flex: 1; 
+
+  display: flex;
   flex-direction: row;
-  width: 9em;
-  height: 5em;
-
-  box-sizing: border-box;
-
   align-items: center;
   justify-content: center;
+
+  box-sizing: border-box;
 
   padding: 20px;
   border: none;
   border-radius: 1em;
-  gap: 0.6em;
 
   background-color: white;
   text-decoration: none;
@@ -65,11 +162,15 @@ body {
   font-size: medium;
   color: black;
 
-  box-shadow: 1px 5px 3px #00000073;
+  box-shadow: var(--shadow);
 }
 
+/*-------------------------- Bottom links Styling -------------------*/
+
 .button {
-  display: inline-flex;
+  display: block;
+  flex: 1 1 200px;
+
   align-items: center;
   justify-content: center;
   padding: 1em;
@@ -77,126 +178,124 @@ body {
   border-radius: 0.8em;
   background-color: white;
   text-decoration: none;
-  font-size: medium;
+  font-size: large;
+  font-weight: bolder;
   color: black;
-  box-shadow: 1px 5px 3px #00000073;
+  box-shadow: var(--shadow);
   position: relative;
 }
 
-#rollGenreBlock {
-  margin: 0.5em 0em 1em 0em;
-  padding: 3em;
-  display: flex;
-  flex: 1 0 6em;
-  /*border: 5px solid green;*/
-  flex-direction: column;
-  align-items: center;
-  gap: 0.4em;
-}
-
-#genreName {
-  font-size: 26px;
-  padding: .2em;
-  font-weight: 900;
-  color: black;
-  margin-bottom: 100px;
-  border: 5px solid rgba(0, 0, 0, 0);
-}
-
-#previewArtist {
-  font-size: 18px;
-  font-weight: 600;
-  padding: .2em;
-  color: black;
-  border: 5px solid rgba(0, 0, 0, 0);
-}
-
-#previewSong {
-  font-size: 16px;
-  font-weight: 200;
-  font-style: italic;
-  padding: .1em;
-  color: black;
-  border: 5px solid rgba(0, 0, 0, 0);
-}
-
-.showGenre {
-  flex: 0 0 300px;
-  width: 300px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  border-radius: 1.4em;
-  background-color: white;
-  text-transform: capitalize;
-  box-shadow: 1px 5px 3px #00000073;
-  text-align: center;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  line-height: normal;
-  gap: 0.8em;
-}
-
-.actionButtons {
-  padding: 0.2em 0.8em 0.4em 0.8em;
-  display: flex;
-  flex-direction: row;
-  gap: 0.8em;
-}
-
-.playButtons {
-  padding: 0.2em 0.8em 0.4em 0.8em;
-  display: flex;
-  flex-direction: row;
-  gap: 0.4em;
-}
-
-#LinksBlock {
-  margin: 2.8em 0em 1em 0em;
-  padding: 0.2em 0.8em 0.2em 0.8em;
-  display: flex;
-  flex: 1 0 6em;
-  /*border: 5px solid green;*/
-  flex-direction: column;
-  align-items: center;
-}
-
 .otherLinks {
-  margin: 0.2em 0.2em 0.2em 0.2em;
-  padding: 0.2em 0.8em 0.2em 0.8em;
   display: flex;
-  /*border: 5px solid blue;*/
-  flex-direction: row;
-  gap: 0.8em;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  width: 100%;
 }
 
 .tooltip {
-  position: absolute;
-  bottom: 100%;
-  transform: translateY(4px);
-  width: 8em;
-  background: #ffffff;
-  color: #000000;
-  padding: 1em;
-  border-radius: 0.8em;
-  overflow-wrap: break-word;
-  line-height: normal;
-  font-style: italic;
-  opacity: 0;
-  pointer-events: none;
-  transition: 0.2s;
+  margin-top: .5em;
+  text-align: left;
+  display: block;
+  font-weight: 300;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
-.tooltip > strong {
-  display: inline-block;
+.tooltip strong {
+  font-weight: bold;
   font-style: normal;
 }
 
-.button:hover .tooltip {
-  opacity: 1;
+
+/* ---------------------------------------------------------------------------- PC ----------------------------------------------------------------------- */
+
+@media (min-width: 1024px) {
+  .rdmGenreContainer{
+    width: 15%;
+  }
+
+  .showGenre {
+    max-width: 100%;
+    min-height: 2em;  
+  }
+
+  .mainButtons .playButtons{
+    max-width: 100%;
+  }
+
+ .button {
+   display: inline-flex;
+    width: auto;   
+    flex: 0 0 auto; 
+  } 
+
+  .otherLinks {
+    width: 60dvw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .tooltip {
+    position: absolute;
+    bottom: 100%;
+    transform: translateY(4px);
+    width: 8em;
+    background: white;
+    padding: 1em;
+    border-radius: 0.8em;
+    overflow-wrap: break-word;
+    line-height: normal;
+    font-style: italic;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+    box-shadow: var(--shadow);
+  }
+  .button:hover .tooltip {
+    opacity: 1;
+  }
+
+  .button:hover {
+    transform: translateY(-2px);
+  }
+
 }
 
-.button:hover {
-  transform: translateY(-4px);
+
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+  .rdmGenreContainer {
+    width: 40dvw; 
+  }
+
+  .showGenre {
+    max-width: 100%;
+    min-height: 200px; 
+  }
+
+  .mainButtons .playButtons {
+    max-width: 100%;
+  }
+
+  .button {
+    display: inline-flex;
+    width: auto;
+    flex: 0 0 auto;
+  }
+
+  .otherLinks {
+    width: 90%; 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
+
+
+
+
+
+
